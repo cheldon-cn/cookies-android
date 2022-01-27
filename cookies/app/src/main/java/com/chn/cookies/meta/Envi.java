@@ -30,7 +30,8 @@ public class Envi {
 
         QtNative.setClassLoader(classLoader);
 
-        String[] qtLibs = {"c++_shared","Qt5Core","Qt5Gui","Qt5Widgets","qtforandroid"};
+       // String[] qtLibs = {"c++_shared","Qt5Core","Qt5Gui","Qt5Widgets","qtforandroid"};
+        String[] qtLibs = {"Qt5Core","Qt5Gui","Qt5Widgets","qtforandroid"};
         ArrayList<String> libraryList = new ArrayList<String>();
 
         String libPrefix = nativeLibraryPrefix + "lib";

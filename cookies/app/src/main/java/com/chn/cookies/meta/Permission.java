@@ -22,11 +22,7 @@ public class Permission {
     private static final int MY_PERMISSIONS_REQUEST_CODE = 1;
     static private String[] permissionArr=new String[]{
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
-            Manifest.permission.READ_EXTERNAL_STORAGE,
-            Manifest.permission.LOCATION_HARDWARE,
-            Manifest.permission.INTERNET,
-            Manifest.permission.RECORD_AUDIO,
-            Manifest.permission.READ_PHONE_STATE
+            Manifest.permission.READ_EXTERNAL_STORAGE
 
     };
     static private Activity contextMain = null;
