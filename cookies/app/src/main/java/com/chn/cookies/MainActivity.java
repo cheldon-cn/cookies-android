@@ -50,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+
+
+        //检查所需权限是否授予
+        com.chn.cookies.meta.Permission.Check(MainActivity.this);
     }
 
     @Override
@@ -82,6 +86,16 @@ public class MainActivity extends AppCompatActivity {
     public void onCenterGridClick(View view) {
         startActivity(new Intent(MainActivity.this, CenterGridActivity.class));
 
+    }
+
+    /**
+     * 请求权限回调
+     */
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        com.chn.cookies.meta.Permission.onRequestPermissionsResult(requestCode,permissions,grantResults);
     }
 
 }
