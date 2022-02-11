@@ -22,4 +22,11 @@
         android:name="com.chn.cookies.ui.slideshow.SlideshowFragment"
         android:label="@string/cookies_home"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_mine"
+        android:name="com.chn.cookies.ui.MineFragment"
+        android:label="@string/cookies_home"
+        tools:layout="@layout/fragment_mine" />
+
 </navigation>

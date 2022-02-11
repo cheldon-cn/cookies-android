@@ -6,6 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <include
+        android:id="@+id/ll_top"
+        layout="@layout/titlebar"
+        />
     <TextView
         android:id="@+id/tv_title"
         android:layout_width="match_parent"
@@ -37,12 +41,14 @@
             android:id="@+id/btn_add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/shape_rectangle_round"
             android:text="+"/>
         <Button
             android:id="@+id/btn_sub"
             android:layout_marginLeft="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/shape_rectangle_round"
             android:text="-"/>
     </LinearLayout>
 

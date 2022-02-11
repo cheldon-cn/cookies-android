@@ -7,6 +7,11 @@
     android:background="@color/cookies_bg"
     tools:context=".ui.slideshow.SlideshowFragment">
 
+    <include
+        android:id="@+id/ll_top"
+        layout="@layout/titlebar"
+        />
+
     <TextView
         android:id="@+id/text_slideshow"
         android:layout_width="match_parent"

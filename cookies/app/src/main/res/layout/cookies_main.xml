@@ -2,17 +2,22 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/cookies_bg"
                 xmlns:GroupViewItem="http://schemas.android.com/apk/res-auto"
                 android:fitsSystemWindows="false">
 
+<!--    <include-->
+<!--        android:id="@+id/ll_top"-->
+<!--        layout="@layout/toolbar"-->
+<!--        />-->
     <include
         android:id="@+id/ll_top"
-        layout="@layout/toolbar"
+        layout="@layout/titlebar"
         />
-
     <ScrollView
         android:id="@+id/scrollView"
-        android:background="@color/cookies_bg"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/ll_top">
@@ -24,7 +29,7 @@
             android:layout_below="@+id/ll_top"
             android:onClick="onViewClicked"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="5dp">
 
             <include
                 android:id="@+id/item_column"
@@ -36,60 +41,6 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@android:color/black" />
-
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginLeft="@dimen/margin_20"-->
-<!--                android:layout_marginRight="@dimen/margin_20"-->
-<!--                android:layout_marginBottom="@dimen/margin_20"-->
-<!--                android:background="@drawable/shape_white_8r"-->
-<!--                android:orientation="vertical"-->
-<!--                android:paddingTop="@dimen/margin_20"-->
-<!--                android:paddingBottom="@dimen/margin_20">-->
-
-<!--                <com.chn.cookies.flexbox.widget.GroupViewItem-->
-<!--                    android:id="@+id/item_entrench"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    GroupViewItem:leftImage="@mipmap/mima_baohu"-->
-<!--                    GroupViewItem:title="安全防护" />-->
-
-<!--                <View style="@style/GrayLineHorizontal" />-->
-
-<!--                <com.chn.cookies.flexbox.widget.GroupViewItem-->
-<!--                    android:id="@+id/item_check_update"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    GroupViewItem:leftImage="@mipmap/check_updata"-->
-<!--                    GroupViewItem:title="检测新版本" />-->
-
-<!--                <View style="@style/GrayLineHorizontal" />-->
-
-<!--                <com.chn.cookies.flexbox.widget.GroupViewItem-->
-<!--                    android:id="@+id/item_us"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    GroupViewItem:leftImage="@mipmap/guanyu"-->
-<!--                    GroupViewItem:title="关于我们" />-->
-
-
-<!--            </LinearLayout>-->
-
-
-<!--            <Button-->
-<!--                android:id="@+id/btn_submit"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="40dp"-->
-<!--                android:layout_alignParentBottom="true"-->
-<!--                android:layout_marginLeft="@dimen/margin_20"-->
-<!--                android:layout_marginRight="@dimen/margin_20"-->
-<!--                android:layout_marginBottom="20dp"-->
-<!--                android:background="@drawable/btn_selected"-->
-<!--                android:onClick="onViewClicked"-->
-<!--                android:text="确认生成二维码"-->
-<!--                android:textColor="@color/color_ffffff"-->
-<!--                android:textSize="18dp" />-->
 
         </LinearLayout>
     </ScrollView>

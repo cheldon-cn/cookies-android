@@ -15,14 +15,12 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.chn.cookies.R;
+import com.chn.cookies.databinding.FragmentMineBinding;
 import com.chn.cookies.flexbox.utils.ToastUtil;
-import com.chn.zxing.encode.CodeCreator;
-import com.google.zxing.WriterException;
+import com.chn.cookies.ui.MineFragment;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -51,4 +49,25 @@ public class SettingActivity extends BaseActivity {
         setContentView(R.layout.setting);
     }
 
+    public void onViewClicked(View view)
+    {
+        switch (view.getId()) {
+            case R.id.item_us:
+            {
+                MineFragment fragment = MineFragment.newInstance();
+
+
+               // fragment.onCreate(true);
+//                finish();
+            }
+                break;
+            case R.id.item_check_update:
+                break;
+            case R.id.item_entrench:
+                break;
+            case R.id.btn_logout:
+                finish();
+                break;
+        }
+    }
 }

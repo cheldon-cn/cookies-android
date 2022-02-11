@@ -7,9 +7,13 @@
                 android:fitsSystemWindows="false">
 
 
+<!--    <include-->
+<!--        android:id="@+id/ll_top"-->
+<!--        layout="@layout/toolbar"-->
+<!--        />-->
     <include
         android:id="@+id/ll_top"
-        layout="@layout/toolbar"
+        layout="@layout/titlebar"
         />
 
 
@@ -36,43 +40,48 @@
                 android:layout_marginRight="@dimen/margin_20"
                 android:background="@drawable/shape_white_8r"
                 android:layout_height="wrap_content">
+
                 <com.chn.cookies.flexbox.widget.GroupViewItem
                     android:id="@+id/item_entrench"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="onViewClicked"
                     GroupViewItem:leftImage="@mipmap/mima_baohu"
-                    GroupViewItem:title="安全防护"
-                    />
+                    GroupViewItem:title="安全防护" />
                 <View style="@style/GrayLineHorizontal"/>
+
                 <com.chn.cookies.flexbox.widget.GroupViewItem
                     android:id="@+id/item_check_update"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="onViewClicked"
                     GroupViewItem:leftImage="@mipmap/check_updata"
-                    GroupViewItem:title="检测新版本"
-                    />
+                    GroupViewItem:title="检测新版本" />
 
                 <View style="@style/GrayLineHorizontal"/>
+
                 <com.chn.cookies.flexbox.widget.GroupViewItem
                     android:id="@+id/item_us"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="onViewClicked"
                     GroupViewItem:leftImage="@mipmap/guanyu"
-                    GroupViewItem:title="关于我们"
-                    />
+                    GroupViewItem:title="关于我们" />
 
 
 
             </LinearLayout>
+
             <Button
-                android:enabled="true"
                 android:id="@+id/btn_logout"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginTop="21dp"
                 android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginTop="21dp"
                 android:layout_marginRight="@dimen/margin_20"
                 android:background="@drawable/btn_selected"
+                android:enabled="true"
+                android:onClick="onViewClicked"
                 android:text="退出登录"
                 android:textColor="@color/white"
                 android:textSize="18dp" />

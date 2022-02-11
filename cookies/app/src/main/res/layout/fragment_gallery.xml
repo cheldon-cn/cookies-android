@@ -12,11 +12,15 @@
         android:background="@color/cookies_bg"
         android:orientation="vertical">
 
+<!--        <include-->
+<!--            android:id="@+id/ll_top"-->
+<!--            layout="@layout/toolbar"-->
+<!--            />-->
+
         <include
             android:id="@+id/ll_top"
-            layout="@layout/toolbar"
+            layout="@layout/titlebar"
             />
-
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"

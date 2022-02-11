@@ -40,12 +40,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".flexbox.activity.LabelActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.Cookies.NoActionBar">
         </activity>
         <activity android:name=".flexbox.activity.CenterGridActivity"
             android:theme="@style/Theme.Cookies.NoActionBar" />
+
         <activity android:name=".flexbox.activity.PayActivity"
             android:theme="@style/Theme.Cookies.NoActionBar" />
 
@@ -54,6 +56,11 @@
 
         <activity android:name=".flexbox.activity.SettingActivity"
             android:theme="@style/Theme.Cookies.NoActionBar" />
+
+        <activity android:name=".login.LoginActivity"
+            android:theme="@style/Theme.Cookies.NoActionBar" />
+
+
 
     </application>
 

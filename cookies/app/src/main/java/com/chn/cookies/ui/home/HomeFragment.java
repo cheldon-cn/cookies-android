@@ -23,6 +23,7 @@ import com.chn.cookies.flexbox.activity.CenterGridActivity;
 import com.chn.cookies.flexbox.activity.LabelActivity;
 import com.chn.cookies.flexbox.activity.PayActivity;
 import com.chn.cookies.flexbox.activity.SettingActivity;
+import com.chn.cookies.login.LoginActivity;
 
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -41,13 +42,13 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
-        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
+//        final TextView textView = binding.textHome;
+//        homeViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+//            @Override
+//            public void onChanged(@Nullable String s) {
+//                textView.setText(s);
+//            }
+//        });
         initCookies(root);
         return root;
     }
@@ -228,7 +229,8 @@ public class HomeFragment extends Fragment {
                 break;
             case R.mipmap.dae: ++m;
                 break;
-            case R.mipmap.renzheng: m++;
+            case R.mipmap.renzheng:
+                startActivity(new Intent(activity, LoginActivity.class));
                 break;
             case R.mipmap.zhiwen: m--;
                 break;

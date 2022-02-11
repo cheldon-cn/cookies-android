@@ -119,7 +119,9 @@ ext {
             "canary-release"           : "com.squareup.leakcanary:leakcanary-android-no-op:1.6.3",
             "umeng-analytics"          : "com.umeng.analytics:analytics:6.0.1",
 
-
+            "jessyan_arms"             : "me.jessyan:arms:2.5.0",
+            "RxCache_runtime"          : "com.github.VictorAlbertos.RxCache:runtime:1.8.3-2.x",
+            tbruyelle_rxpermissions    : "com.github.tbruyelle:rxpermissions:0.10.2",
             easypermissions            : "pub.devrel:easypermissions:3.0.0"
     ]
 }

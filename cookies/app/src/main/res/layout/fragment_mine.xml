@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:GroupViewItem="http://schemas.android.com/apk/res-auto"
+    android:background="@color/cookies_bg"
+    android:orientation="vertical"
+    >
+    <include
+        android:id="@+id/ll_top"
+        layout="@layout/titlebar"
+        />
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:GroupViewItem="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:GroupViewItem="http://schemas.android.com/apk/res-auto"
+            android:background="@color/color_bg"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="500px">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="250px"
+                    android:background="@color/cookies_bg"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="360px"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="@dimen/margin_20"
+                    android:layout_marginRight="@dimen/margin_20"
+                    android:background="@drawable/shape_white_8r">
+
+                    <TextView
+                        android:id="@+id/nick_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="150px"
+                        android:text="@string/cookies_home"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="70px"
+                        android:layout_marginRight="70px"
+                        android:layout_marginBottom="70px">
+
+                        <TextView
+                            android:id="@+id/tv_money_balance"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text="50.00"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tv_integral"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="88000"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60px"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="70px"
+                        android:layout_marginRight="70px"
+                        android:layout_marginBottom="5px">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="可用余额(元)"
+                            android:textColor="@color/text_gray"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="会员积分"
+                            android:textColor="@color/text_gray"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+                <ImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="220px"
+                    android:layout_height="220px"
+                    android:layout_marginTop="30px"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/ic_launcher"
+                    android:background="@drawable/shape_circle"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/margin_20"
+                android:background="@drawable/shape_white_8r"
+                android:layout_height="120px">
+
+                <TextView
+                    android:id="@+id/tv_recharge"
+                    android:layout_width="135px"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_main_color"
+                    android:textColor="@color/main_while"
+                    android:text="充值"
+                    android:gravity="center"
+                    android:layout_marginLeft="125px"
+                    android:layout_height="60px"/>
+                <TextView
+                    android:id="@+id/tv_withdraw"
+                    android:layout_width="135px"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/shape_transparency"
+                    android:textColor="@color/colorPrimary"
+                    android:text="提现"
+                    android:gravity="center"
+                    android:layout_marginRight="125px"
+                    android:layout_height="60px"/>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/margin_20"
+                android:layout_marginBottom="@dimen/margin_20"
+                android:paddingBottom="@dimen/margin_20"
+                android:layout_marginLeft="@dimen/margin_20"
+                android:layout_marginRight="@dimen/margin_20"
+                android:background="@drawable/shape_white_8r"
+                android:layout_height="wrap_content">
+                <com.chn.cookies.flexbox.widget.GroupViewItem
+                    android:id="@+id/item_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    GroupViewItem:leftImage="@mipmap/yinhangka"
+                    GroupViewItem:title="我的银行卡"
+                    />
+                <View style="@style/GrayLineHorizontal"/>
+                <com.chn.cookies.flexbox.widget.GroupViewItem
+                    android:id="@+id/item_truth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    GroupViewItem:leftImage="@mipmap/renzheng"
+                    GroupViewItem:title="实名认证"
+                    />
+                <View style="@style/GrayLineHorizontal"/>
+
+                <com.chn.cookies.flexbox.widget.GroupViewItem
+                    android:id="@+id/item_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    GroupViewItem:leftImage="@mipmap/dingdan"
+                    GroupViewItem:title="我的订单"
+                    />
+                <View style="@style/GrayLineHorizontal"/>
+                <com.chn.cookies.flexbox.widget.GroupViewItem
+                    android:id="@+id/item_shopping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    GroupViewItem:leftImage="@mipmap/gouwuche"
+                    GroupViewItem:title="购物车"
+                    />
+
+                <View style="@style/GrayLineHorizontal"/>
+                <com.chn.cookies.flexbox.widget.GroupViewItem
+                    android:id="@+id/item_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    GroupViewItem:leftImage="@mipmap/dizhi"
+                    GroupViewItem:title="收货地址"
+                    />
+
+
+                <View style="@style/GrayLineHorizontal"/>
+                <com.chn.cookies.flexbox.widget.GroupViewItem
+                    android:id="@+id/item_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    GroupViewItem:leftImage="@mipmap/setting"
+                    GroupViewItem:title="设置"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
