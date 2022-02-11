@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/button_item"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginLeft="0dp"
+    android:layout_weight="1"
+    >
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/shape_circle"
+        android:scaleType="centerInside"
+        android:src="@drawable/zhifubao_2x" />
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/textclr"
+        android:text="支付宝"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:src="@mipmap/check"
+        android:visibility="gone" />
+</RelativeLayout>
+

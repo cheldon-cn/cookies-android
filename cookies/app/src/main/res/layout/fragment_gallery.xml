@@ -9,21 +9,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/cookies_bg"
         android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onButtonClick"
-            android:text="LabelClick" />
-
+        <include
+            android:id="@+id/ll_top"
+            layout="@layout/toolbar"
+            />
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="276dp"
-            tools:src="@tools:sample/backgrounds/scenic" />
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/shape_rectangle_round"
+            android:padding="20dp"
+            tools:src="@drawable/zhifubao_2x" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

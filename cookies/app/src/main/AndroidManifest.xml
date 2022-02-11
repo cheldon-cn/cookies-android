@@ -46,6 +46,15 @@
         </activity>
         <activity android:name=".flexbox.activity.CenterGridActivity"
             android:theme="@style/Theme.Cookies.NoActionBar" />
+        <activity android:name=".flexbox.activity.PayActivity"
+            android:theme="@style/Theme.Cookies.NoActionBar" />
+
+        <activity android:name=".flexbox.activity.CookiesActivity"
+            android:theme="@style/Theme.Cookies.NoActionBar" />
+
+        <activity android:name=".flexbox.activity.SettingActivity"
+            android:theme="@style/Theme.Cookies.NoActionBar" />
+
     </application>
 
 </manifest>

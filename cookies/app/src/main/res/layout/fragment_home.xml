@@ -21,27 +21,40 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/lnLayout_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="1dp"
         android:orientation="vertical">
        // tools:context=".MainActivity">
 
-        <Button
-            android:id="@+id/btn_label"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onLabelClick"
-            android:padding="1dp"
-            android:text="标签布局" />
+<!--        <Button-->
+<!--            android:id="@+id/btn_label"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:onClick="onLabelClick"-->
+<!--            android:padding="1dp"-->
+<!--            android:text="标签布局" />-->
 
-        <Button
-            android:id="@+id/btn_center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onCenterGridClick"
-            android:padding="2dp"
-            android:text="中心展开网格布局" />
+<!--        <Button-->
+<!--            android:id="@+id/btn_center"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:onClick="onCenterGridClick"-->
+<!--            android:padding="2dp"-->
+<!--            android:text="中心展开网格布局" />-->
 
+<!--        <Button-->
+<!--            android:id="@+id/button2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:onClick="onGridClick"-->
+<!--            android:padding="1dp"-->
+<!--            android:text="GRID LAYOUT" />-->
+
+        <include
+            android:id="@+id/cookies_main"
+            layout="@layout/cookies_main" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

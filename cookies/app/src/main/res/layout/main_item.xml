@@ -1,19 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
 
-    <ImageView
-        android:id="@+id/item_img"
-        android:layout_width="58dp"
-        android:layout_height="47dp"
-        android:layout_gravity="center_horizontal" />
+    <RelativeLayout
+        android:id="@+id/button_zhifubao"
+        android:layout_width="120dp"
+        android:layout_height="125dp"
+        android:layout_marginLeft="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_button"
+        android:onClick="onViewClicked">
 
-    <TextView
-        android:id="@+id/item_txt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:textSize="14sp"
-        android:layout_gravity="center_horizontal"/>
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/zhifubao_2x" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="支付宝"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:src="@mipmap/check"
+            android:visibility="gone" />
+    </RelativeLayout>
+
 </LinearLayout>

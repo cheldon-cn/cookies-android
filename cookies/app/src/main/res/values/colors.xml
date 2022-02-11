@@ -7,7 +7,35 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="colorPrimary">#FF6200EE</color>
+    <color name="textclr">#FFFAFAFA</color>
+    //标题栏背景颜色
+    <color name="main_title_background">#5c8af5</color>
+    //标题栏字体颜色
+    <color name="main_title_text_color">#fbfbfb</color>
+    <color name="color_bg">#F0F0F0</color>
+    <color name="main_gray">#9da4a7</color>
+    <color name="text_gray">#949494</color>
+    <color name="main_black">#272e3b</color>
+    <color name="main_while">#ffffff</color>
+    <color name="main_orange">#d74a30</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="colorPrimary">#FF003A98</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="cookies_bg">#022F7B</color>
+
+    <dimen name="margin_20">20px</dimen>
+
+
+    <color name="cardShadowColor_1">#cbdeff</color>
+    <color name="cardShadowColor_2">#b7def4</color>
+    <color name="cardShadowColor_3">#5bbcf9</color>
+    <color name="cardShadowColor_4">#5c8af5</color>
+    <dimen name="cardPadding1">0.2px</dimen>
+    <dimen name="cardPadding2">0.5px</dimen>
+    <dimen name="cardPadding3">0.9px</dimen>
+    <dimen name="cardPadding4">1.4px</dimen>
+    <dimen name="cardPadding5">2px</dimen>
+    <dimen name="cardRadius">10dp</dimen>
+
 </resources>

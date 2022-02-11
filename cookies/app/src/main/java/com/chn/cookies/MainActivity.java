@@ -6,7 +6,9 @@ import android.view.View;
 import android.view.Menu;
 
 import com.chn.cookies.flexbox.activity.CenterGridActivity;
+import com.chn.cookies.flexbox.activity.CookiesActivity;
 import com.chn.cookies.flexbox.activity.LabelActivity;
+import com.chn.cookies.flexbox.activity.PayActivity;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -87,7 +89,18 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(MainActivity.this, CenterGridActivity.class));
 
     }
+    public void onGridClick(View view) {
+        startActivity(new Intent(MainActivity.this, PayActivity.class));
 
+    }
+
+    public void onCookiesClick(View view) {
+        int id = view.getId();
+        switch (id) {
+
+        }
+
+    }
     /**
      * 请求权限回调
      */
