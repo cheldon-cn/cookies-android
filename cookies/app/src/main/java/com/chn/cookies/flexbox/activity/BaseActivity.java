@@ -8,6 +8,8 @@ import android.view.inputmethod.InputMethodManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.chn.cookies.AppManager;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
@@ -20,6 +22,7 @@ public  abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        AppManager.getAppManager().addActivity(this);
         initView();
         bindEvent();
         initData();

@@ -24,6 +24,7 @@ import com.chn.cookies.flexbox.activity.LabelActivity;
 import com.chn.cookies.flexbox.activity.PayActivity;
 import com.chn.cookies.flexbox.activity.SettingActivity;
 import com.chn.cookies.login.LoginActivity;
+import com.chn.cookies.ui.navi.DemoActivity;
 
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -217,7 +218,8 @@ public class HomeFragment extends Fragment {
             case R.drawable.yinlian_2x:
                 startActivity(new Intent(activity, LabelActivity.class));
                 break;
-            case R.mipmap.dingdan: m++;
+            case R.mipmap.dingdan:
+                startActivity(new Intent(activity, DemoActivity.class));
                 break;
             case R.mipmap.temai: m--;
                 break;

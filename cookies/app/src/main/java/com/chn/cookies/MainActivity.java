@@ -2,13 +2,16 @@ package com.chn.cookies;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.Menu;
 
+import com.chn.cookies.flexbox.activity.BaseActivity;
 import com.chn.cookies.flexbox.activity.CenterGridActivity;
 import com.chn.cookies.flexbox.activity.CookiesActivity;
 import com.chn.cookies.flexbox.activity.LabelActivity;
 import com.chn.cookies.flexbox.activity.PayActivity;
+import com.chn.cookies.ui.MineFragment;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -21,10 +24,24 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.chn.cookies.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
+
+
+    @Override
+    protected void initView() {
+
+    }
+    @Override
+    protected void bindEvent() {
+
+    }
+    @Override
+    protected void initData() {
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,13 +111,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void onCookiesClick(View view) {
-        int id = view.getId();
-        switch (id) {
-
-        }
-
-    }
     /**
      * 请求权限回调
      */
@@ -110,5 +120,8 @@ public class MainActivity extends AppCompatActivity {
 
         com.chn.cookies.meta.Permission.onRequestPermissionsResult(requestCode,permissions,grantResults);
     }
+
+
+
 
 }
