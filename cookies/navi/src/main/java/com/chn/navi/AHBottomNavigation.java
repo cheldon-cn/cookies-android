@@ -59,9 +59,9 @@ public class AHBottomNavigation extends FrameLayout {
 
 	// Title state
 	public enum TitleState {
+		ALWAYS_SHOW,
 		SHOW_WHEN_ACTIVE,
 		SHOW_WHEN_ACTIVE_FORCE,
-		ALWAYS_SHOW,
 		ALWAYS_HIDE
 	}
 
@@ -112,7 +112,7 @@ public class AHBottomNavigation extends FrameLayout {
 	private int bottomNavigationHeight, navigationBarHeight = 0;
 	private float selectedItemWidth, notSelectedItemWidth;
 	private boolean forceTint = true;
-	private TitleState titleState = TitleState.SHOW_WHEN_ACTIVE;
+	private TitleState titleState = TitleState.ALWAYS_SHOW;
 
 	// Notifications
 	private @ColorInt int notificationTextColor;

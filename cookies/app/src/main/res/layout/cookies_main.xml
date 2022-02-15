@@ -10,43 +10,19 @@
         android:id="@+id/ll_top"
         layout="@layout/titlebar"
         />
-    <ScrollView
-        android:id="@+id/scrollView"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/ll_top">
-
-        <LinearLayout
-            android:id="@+id/ll_content"
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@+id/ll_top"
-            android:onClick="onViewClicked"
-            android:orientation="vertical"
-            android:padding="5dp">
+            android:layout_below="@id/ll_top">
 
             <include
-                android:id="@+id/item_column"
-                layout="@layout/item_column" />
-
-            <!-- 分割线 -->
-            <View
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@android:color/black" />
-
-        </LinearLayout>
-    </ScrollView>
-
-    <ImageView
-        android:id="@+id/iv_qr"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_centerInParent="true"
-        android:visibility="gone"/>
+                android:id="@+id/ll_view"
+                layout="@layout/cookies_view"
+                />
+        </ScrollView>
 
 
 

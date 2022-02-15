@@ -60,27 +60,35 @@ public class HomeFragment extends Fragment {
         binding = null;
     }
 
-    protected void initCookies(View root)
+     public  void  initHome(View main)
     {
-        map.clear();
-        map.put( R.drawable.weinxin_2x,"微信");
-        map.put( R.drawable.zhifubao_2x,"支付宝");
-        map.put( R.drawable.yinlian_2x,"银联");
-        map.put( R.mipmap.dingdan,"订单");
-        map.put( R.mipmap.temai,"特卖");
-        map.put( R.mipmap.gouwuche,"购物车");
-        map.put( R.mipmap.yinhangka,"银行卡");
-        map.put( R.mipmap.licai,"理财");
-        map.put( R.mipmap.dae,"大额");
-        map.put( R.mipmap.renzheng,"认证");
-        map.put( R.mipmap.zhiwen,"指纹");
-        map.put( R.mipmap.renlian,"人脸");
-        map.put( R.mipmap.check_updata,"更新");
-        map.put( R.mipmap.dizhi,"地址");
-        map.put( R.mipmap.setting,"设置");
+        initCookiesView(main);
+    }
 
-        if(root == null) return;
-        View main = root.findViewById(R.id.cookies_main);
+
+    protected void initRes() {
+        map.clear();
+        map.put(R.drawable.weinxin_2x, "微信");
+        map.put(R.drawable.zhifubao_2x, "支付宝");
+        map.put(R.drawable.yinlian_2x, "银联");
+        map.put(R.mipmap.dingdan, "订单");
+        map.put(R.mipmap.temai, "特卖");
+        map.put(R.mipmap.gouwuche, "购物车");
+        map.put(R.mipmap.yinhangka, "银行卡");
+        map.put(R.mipmap.licai, "理财");
+        map.put(R.mipmap.dae, "大额");
+        map.put(R.mipmap.renzheng, "认证");
+        map.put(R.mipmap.zhiwen, "指纹");
+        map.put(R.mipmap.renlian, "人脸");
+        map.put(R.mipmap.check_updata, "更新");
+        map.put(R.mipmap.dizhi, "地址");
+        map.put(R.mipmap.setting, "设置");
+
+    }
+    protected void initCookiesView(View main)
+    {
+        initRes();
+
         if(main == null) return;
         View column = main.findViewById(R.id.item_column);
         if(column == null) return;
@@ -95,6 +103,14 @@ public class HomeFragment extends Fragment {
         setRow(row3,3);
         setRow(row4,4);
         setRow(row5,5);
+    }
+
+    protected void initCookies(View root)
+    {
+        if(root == null) return;
+        View main = root.findViewById(R.id.cookies_main);
+        if(main == null) return;
+        initCookiesView(main);
     }
     protected void setRow(View row,int nRow)
     {

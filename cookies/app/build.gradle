@@ -59,6 +59,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     implementation 'com.google.android:flexbox:1.1.0'
+    implementation rootProject.ext.dependencies["cardview"]
 //    implementation rootProject.ext.dependencies["RxCache_runtime"]
 //    implementation rootProject.ext.dependencies.tbruyelle_rxpermissions
 //    implementation rootProject.ext.dependencies["jessyan_arms"]
