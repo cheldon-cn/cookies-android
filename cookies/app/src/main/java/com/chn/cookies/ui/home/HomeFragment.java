@@ -25,6 +25,9 @@ import com.chn.cookies.flexbox.activity.PayActivity;
 import com.chn.cookies.flexbox.activity.SettingActivity;
 import com.chn.cookies.login.LoginActivity;
 import com.chn.cookies.ui.navi.DemoActivity;
+import com.chn.weather.WeMainActivity;
+import com.chn.weather.WeatherActivity;
+import com.chn.zxing.android.CaptureActivity;
 
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -238,8 +241,10 @@ public class HomeFragment extends Fragment {
                 startActivity(new Intent(activity, DemoActivity.class));
                 break;
             case R.mipmap.temai: m--;
+                startActivity(new Intent(activity, CaptureActivity.class));
                 break;
             case R.mipmap.gouwuche: ++m;
+                startActivity(new Intent(activity, WeMainActivity.class));
                 break;
             case R.mipmap.yinhangka: m++;
                 break;

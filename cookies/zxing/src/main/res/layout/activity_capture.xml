@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.yzq.zxinglibrary.android.CaptureActivity">
+    tools:context="com.chn.zxing.android.CaptureActivity">
     <!-- 整体透明画布 -->
 
 
@@ -14,7 +14,7 @@
         android:layout_height="match_parent" />
 
 
-    <android.support.v7.widget.LinearLayoutCompat
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
@@ -28,7 +28,7 @@
             android:layout_gravity="top"
             android:background="#99000000">
 
-            <android.support.v7.widget.AppCompatImageView
+            <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/backIv"
                 android:layout_width="42dp"
                 android:layout_height="match_parent"
@@ -48,14 +48,14 @@
 
 
         <!-- 扫描取景框 -->
-        <com.yzq.zxinglibrary.view.ViewfinderView
+        <com.chn.zxing.view.ViewfinderView
             android:id="@+id/viewfinder_view"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1" />
 
 
-        <android.support.v7.widget.LinearLayoutCompat
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/bottomLayout"
             android:layout_width="match_parent"
             android:layout_height="96dp"
@@ -63,7 +63,7 @@
             android:background="#99000000"
             android:orientation="horizontal">
 
-            <android.support.v7.widget.LinearLayoutCompat
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:id="@+id/flashLightLayout"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -71,7 +71,7 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/flashLightIv"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
@@ -86,9 +86,9 @@
                     android:text="打开闪光灯"
                     android:textColor="#ffffff" />
 
-            </android.support.v7.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
 
-            <android.support.v7.widget.LinearLayoutCompat
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:id="@+id/albumLayout"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -96,7 +96,7 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/albumIv"
                     android:layout_width="36dp"
                     android:layout_height="36dp"
@@ -111,10 +111,10 @@
                     android:text="相册"
 
                     android:textColor="#ffffff" />
-            </android.support.v7.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
 
 
-        </android.support.v7.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
-    </android.support.v7.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 </RelativeLayout>

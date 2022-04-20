@@ -125,7 +125,7 @@ ext {
             "RxCache_runtime"          : "com.github.VictorAlbertos.RxCache:runtime:1.8.3-2.x",
             tbruyelle_rxpermissions    : "com.github.tbruyelle:rxpermissions:0.10.2",
             easypermissions            : "pub.devrel:easypermissions:3.0.0",
-            litepal                    : "org.litepal.android:core:1.3.2",
+            litepal                    : "org.litepal.android:core:1.5.1",
             litepal3                   : "org.litepal.guolindev:core:3.2.3"
     ]
 }

@@ -210,21 +210,21 @@ public class DemoFragment extends Fragment {
 
 	protected void initRes() {
 		map.clear();
-		map.put(R.drawable.weinxin_2x, "Î¢ĞÅ");
-		map.put(R.drawable.zhifubao_2x, "Ö§¸¶±¦");
-		map.put(R.drawable.yinlian_2x, "ÒøÁª");
-		map.put(R.mipmap.dingdan, "¶©µ¥");
-		map.put(R.mipmap.temai, "ÌØÂô");
-		map.put(R.mipmap.gouwuche, "¹ºÎï³µ");
-		map.put(R.mipmap.yinhangka, "ÒøĞĞ¿¨");
-		map.put(R.mipmap.licai, "Àí²Æ");
-		map.put(R.mipmap.dae, "´ó¶î");
-		map.put(R.mipmap.renzheng, "ÈÏÖ¤");
-		map.put(R.mipmap.zhiwen, "Ö¸ÎÆ");
-		map.put(R.mipmap.renlian, "ÈËÁ³");
-		map.put(R.mipmap.check_updata, "¸üĞÂ");
-		map.put(R.mipmap.dizhi, "µØÖ·");
-		map.put(R.mipmap.setting, "ÉèÖÃ");
+		map.put(R.drawable.weinxin_2x, "å¾®ä¿¡");
+		map.put(R.drawable.zhifubao_2x, "æ”¯ä»˜å®");
+		map.put(R.drawable.yinlian_2x, "é“¶è”");
+		map.put(R.mipmap.dingdan, "è®¢å•");
+		map.put(R.mipmap.temai, "ç‰¹å–");
+		map.put(R.mipmap.gouwuche, "è´­ç‰©è½¦");
+		map.put(R.mipmap.yinhangka, "é“¶è¡Œå¡");
+		map.put(R.mipmap.licai, "ç†è´¢");
+		map.put(R.mipmap.dae, "å¤§é¢");
+		map.put(R.mipmap.renzheng, "è®¤è¯");
+		map.put(R.mipmap.zhiwen, "æŒ‡çº¹");
+		map.put(R.mipmap.renlian, "äººè„¸");
+		map.put(R.mipmap.check_updata, "æ›´æ–°");
+		map.put(R.mipmap.dizhi, "åœ°å€");
+		map.put(R.mipmap.setting, "è®¾ç½®");
 
 	}
 	protected void initCookiesView(View main)

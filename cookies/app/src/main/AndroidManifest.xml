@@ -67,7 +67,14 @@
         <activity android:name=".login.LoginActivity"
             android:theme="@style/Theme.Cookies.NoActionBar" />
 
+        <activity android:name="com.chn.weather.WeMainActivity"
+            android:theme="@style/Theme.Cookies.NoActionBar" />
 
+        <activity android:name="com.chn.weather.WeatherActivity"
+            android:theme="@style/Theme.Cookies.NoActionBar" />
+
+        <activity android:name="com.chn.zxing.android.CaptureActivity"
+            android:theme="@style/Theme.Cookies.NoActionBar" />
 
     </application>
 

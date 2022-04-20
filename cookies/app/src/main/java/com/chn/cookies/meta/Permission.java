@@ -22,7 +22,8 @@ public class Permission {
     private static final int MY_PERMISSIONS_REQUEST_CODE = 1;
     static private String[] permissionArr=new String[]{
             Manifest.permission.WRITE_EXTERNAL_STORAGE,
-            Manifest.permission.READ_EXTERNAL_STORAGE
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.CAMERA
 
     };
     static private Activity contextMain = null;
