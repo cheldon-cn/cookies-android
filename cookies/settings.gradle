@@ -2,3 +2,4 @@ rootProject.name = "cookies"
 include ':app'
 include ':zxing'
 include ':navi'
+include ':weather'
